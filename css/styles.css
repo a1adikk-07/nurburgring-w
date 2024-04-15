@@ -1,0 +1,134 @@
+/* РОбимо колір для заднього фону */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c2c3c8;
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  /* max-width: 428px; */
+  padding: 0 16px;
+  margin: 0 auto;
+}
+/* основні стилі для шапки сайту */
+
+.header {
+  display: flex;
+  padding: 32px 60px;
+  background-color: #3a393e;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+/* стилі для логотипу */
+
+.logo-icon {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -50px;
+}
+
+/* стилі для списку */
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin-left: 30%;
+  gap: 18px;
+}
+
+/* стилі для елементів спску */
+
+.nav-link {
+  color: #e2e9ee;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* стилі при наведенні */
+.nav-link:hover {
+  color: #fe2d2d;
+  transition: 400ms;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    display: block;
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .logo-icon {
+    margin-left: -10px;
+  }
+
+  .nav {
+    margin-left: 40%;
+    gap: 50px;
+  }
+
+  .nav-link {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .logo-icon {
+    margin-left: 1px;
+  }
+
+  .nav {
+    margin-left: 45%;
+    gap: 75px;
+  }
+
+  .nav-link {
+    font-size: 34px;
+  }
+}
+
+.register {
+  padding: 188px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tel.jpg);
+}
+
+@media screen and (max-width: 400px) {
+  .register {
+    background-color: #2e2f42;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+}
+
+@media only screen and (min-width: 1300px) {
+}
+
+p {
+  font-size: 28px;
+}
