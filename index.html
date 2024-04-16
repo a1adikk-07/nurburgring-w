@@ -11,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Nürburgring</title>
   </head>
   <body>
     <header class="header">
@@ -43,16 +43,6 @@
         </div>
       </section>
 
-      <div id="records">
-        <h2>Records</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint
-          molestiae adipisci culpa laboriosam, earum dolore, impedit sed autem
-          aspernatur fuga vel veritatis dolorum nobis perferendis illum
-          voluptatem dolor repudiandae corporis nostrum similique voluptate
-          suscipit laudantium corrupti. Ad, sunt praesentium!
-        </p>
-      </div>
       <div id="rent">
         <h2>Rent</h2>
         <p>
@@ -61,17 +51,67 @@
           neque aspernatur harum.
         </p>
       </div>
-      <div id="registration">
-        <h2>Registration</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ut.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis
-          adipisci tempore magnam eveniet quibusdam iste sit cumque maiores,
-          magni, mollitia qui similique dicta minus quod quis iure totam est
-          dolorum rem doloribus dolore. Architecto possimus facere excepturi
-          mollitia ad.
-        </p>
+
+      <div class="slider">
+        <div class="slide">
+          <img src="" alt="" />
+          <p>Слайд 1</p>
+          <p>Слайд 1</p>
+          <p>Слайд 1</p>
+        </div>
+        <div class="slide hidden">Слайд 2</div>
+        <div class="slide hidden">Слайд 3</div>
+      </div>
+      <div class="btn-container">
+        <button class="prev">Назад</button>
+        <button class="next">Вперед</button>
       </div>
     </main>
+
+    <!----------------- FOOTER -------------->
+
+    <footer class="footer">
+      <div class="footer-info">
+        <a href="#" class="foot-logo">
+          <svg class="footer-logo-icon" width="144" height="144">
+            <use href="./img/symbol-defs.svg#icon-nurburgring-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="soc-div">
+        <p class="soc-text">Our soc. networks:</p>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

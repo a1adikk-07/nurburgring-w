@@ -114,7 +114,33 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Dark-bg-tel.jpg);
+    url(../img/robinson-pross-yEJJCX8RJ9o-unsplash.jpg);
+}
+.hero-title {
+  color: #c2c3c8;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.hero-button {
+  cursor: pointer;
+  display: block;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 550;
+  border: none;
+  border-top-left-radius: 20px;
+  color: #c2c3c8;
+  background-color: #d62525b4;
+  margin: 0 auto;
+  transition: 950ms;
+}
+
+.hero-button:hover {
+  background-color: #f32b2be5;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 20px;
 }
 
 @media screen and (max-width: 400px) {
@@ -124,11 +150,136 @@ body {
 }
 
 @media only screen and (min-width: 750px) {
+  .hero-title {
+    font-size: 60px;
+  }
+
+  .hero-button {
+    padding: 15px 20px;
+    font-size: 25px;
+  }
+
+  .register {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/oskar-de-jonge-YhR00O9QKLk-unsplash.jpg);
+  }
 }
 
 @media only screen and (min-width: 1300px) {
+  .register {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/nurburgring-pk.png);
+  }
 }
 
 p {
   font-size: 28px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: block;
+  padding: 20px 40px;
+  border-top: 2px solid #cdcdcd;
+  background-color: #252525;
+  /* justify-content: center; */
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+/* .foot-logo {
+  align-items: center;
+} */
+
+.footer-info {
+  margin-top: -20px;
+  align-items: center;
+  margin-left: 40%;
+}
+
+.soc-text {
+  color: #cdcdcd;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.footer-social-item {
+  list-style: none;
+  background-color: #cdcdcd;
+  border-radius: 30%;
+  padding: 8px;
+  transition: 800ms;
+}
+
+.footer-social-item:hover {
+  border-radius: 50px;
+  background-color: #f04646;
+  fill: #cdcdcd;
+  box-shadow: 0 0 10px 4px rgba(245, 98, 98, 0.993);
+  transition: box-shadow 250ms ease-in-out 150ms,
+    border-radius 250ms ease-in-out 150ms;
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media only screen and (min-width: 750px) {
+  .footer {
+    display: flex;
+  }
+
+  .footer-info {
+    margin-top: -20px;
+    /* align-items: center; */
+    margin-left: -1px;
+  }
+
+  .soc-div {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .soc-div {
+    margin-left: 50%;
+  }
+}
+
+/* SWIPER */
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 300px; /* Ширина слайдера */
+  margin-bottom: 20px;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
