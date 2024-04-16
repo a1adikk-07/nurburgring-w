@@ -13,6 +13,9 @@ html {
 body {
   background-color: #c2c3c8;
 }
+.list {
+  list-style: none;
+}
 
 .container {
   width: 100%;
@@ -71,7 +74,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 810px) {
   .logo-icon {
     margin-left: -10px;
   }
@@ -149,7 +152,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 810px) {
   .hero-title {
     font-size: 60px;
   }
@@ -236,7 +239,7 @@ p {
 @media screen and (max-width: 400px) {
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 810px) {
   .footer {
     display: flex;
   }
@@ -245,10 +248,24 @@ p {
     margin-top: -20px;
     /* align-items: center; */
     margin-left: -1px;
+
+    .title-records {
+      font-size: 25px;
+    }
   }
 
   .soc-div {
     margin-left: 40%;
+  }
+  .title-records {
+    font-size: 30px;
+  }
+  .car-record {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 25px;
+    color: #4a4a4a;
+    font-weight: 500;
   }
 }
 
@@ -256,22 +273,83 @@ p {
   .soc-div {
     margin-left: 50%;
   }
+  .title-records {
+    font-size: 40px;
+  }
+  .car-record {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 35px;
+    color: #4a4a4a;
+    font-weight: 500;
+  }
+}
+
+.records {
+  padding-left: 10%;
 }
 
 /* SWIPER */
-.slider {
-  display: flex;
-  overflow: hidden;
-  width: 300px; /* Ширина слайдера */
-  margin-bottom: 20px;
+
+.rent-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin: 70px 0;
 }
 
-.slide {
-  flex-shrink: 0;
-  width: 100%;
+.slider {
+  /* margin-left: -60px; */
+  margin-bottom: 40px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.div-for-img {
+  overflow: hidden;
+  width: 330px;
+  height: 190px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.cars-card {
+  width: 330px;
+  background-color: #d7d5d5;
+  border-radius: 25px;
   text-align: center;
-  padding: 20px;
-  border: 1px solid #ccc;
+}
+
+.cars-list {
+  display: block;
+}
+
+@media screen and (min-width: 810px) {
+  .cars-list {
+    display: flex;
+    gap: 10px;
+  }
+  .cars-card {
+    max-width: 290px;
+  }
+  .div-for-img {
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .cars-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-left: -50px;
+  }
+  .cars-card {
+    width: 330px;
+  }
+  .div-for-img {
+    width: 330px;
+  }
 }
 
 .hidden {
@@ -282,4 +360,32 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+}
+
+.prev {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 25px;
+  color: #c2c3c8;
+  background-color: #da2f2f;
+  border: none;
+  border-top-right-radius: 20px;
+  transition: 800ms;
+}
+
+.next {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 25px;
+  color: #c2c3c8;
+  background-color: #da2f2f;
+  border: none;
+  border-top-left-radius: 20px;
+  transition: 800ms;
+}
+
+.next:hover,
+.prev:hover {
+  background-color: #951919;
+  color: #a69f9f;
 }

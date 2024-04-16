@@ -22,13 +22,13 @@
       </a>
       <ul class="nav">
         <li class="nav-li">
+          <a class="nav-link" href="#registration">Registration</a>
+        </li>
+        <li class="nav-li">
           <a class="nav-link" href="#records">Records</a>
         </li>
         <li class="nav-li">
           <a class="nav-link" href="#rent">Rent</a>
-        </li>
-        <li class="nav-li">
-          <a class="nav-link" href="#registration">Registration</a>
         </li>
       </ul>
     </header>
@@ -43,29 +43,119 @@
         </div>
       </section>
 
-      <div id="rent">
-        <h2>Rent</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-          necessitatibus magni error cumque voluptate totam explicabo dolor
-          neque aspernatur harum.
-        </p>
-      </div>
+      <section class="records" id="records">
+        <div class="container">
+          <h2 class="rent-text">Records</h2>
+          <h3 class="title-records">Fastest road legal lap:</h3>
+          <ul class="list">
+            <li class="car-record">1 - Mercedes-AMG One - 6:35:18</li>
+            <li class="car-record">2 - Porsche 911 GT2 RS - 6:43:30</li>
+            <li class="car-record">
+              3 – Mercedes-AMG GT Black Series – 6:43:62
+            </li>
+          </ul>
 
-      <div class="slider">
-        <div class="slide">
-          <img src="" alt="" />
-          <p>Слайд 1</p>
-          <p>Слайд 1</p>
-          <p>Слайд 1</p>
+          <h3 class="title-records">Records for front-wheel drive cars:</h3>
+          <ul class="list">
+            <li class="car-record">1 – 2023 Honda Civic Type R – 7:39.691</li>
+            <li class="car-record">
+              2 – 2019 Renault Mégane RS Trophy-R – 7:40:10
+            </li>
+            <li class="car-record">
+              3 – 2017-2021 Honda Civic Type R – 7:43:80
+            </li>
+          </ul>
+
+          <h3 class="title-records">
+            Rear wheel drive Nürburgring lap records:
+          </h3>
+          <ul class="list">
+            <li class="car-record">1. - Porsche 911 GT2 RS – 6:43:30</li>
+            <li class="car-record">
+              2 – Mercedes-AMG GT Black Series – 6:43:62
+            </li>
+            <li class="car-record">3 – Porsche 911 GT2 RS – 6:47:30</li>
+          </ul>
+          <h3 class="title-records">Fastest ever laps at the Nürburgring:</h3>
+          <ul class="list">
+            <li class="car-record">1 - Porsche 919 Hybrid Evo - 5:19:546</li>
+            <li class="car-record">2 – Volkswagen ID R – 6:05:336</li>
+            <li class="car-record">3 – Porsche 956 – 6:11:13</li>
+          </ul>
         </div>
-        <div class="slide hidden">Слайд 2</div>
-        <div class="slide hidden">Слайд 3</div>
-      </div>
-      <div class="btn-container">
-        <button class="prev">Назад</button>
-        <button class="next">Вперед</button>
-      </div>
+      </section>
+
+      <section>
+        <h2 class="rent-text">You can rent a car to drive on our route</h2>
+
+        <div class="slider" id="rent">
+          <div class="slide">
+            <ul class="cars-list list">
+              <li class="cars-card">
+                <div class="div-for-img">
+                  <img src="./img/seat-c-ft3.webp" alt="seat" width="360" />
+                </div>
+                <h3>Seat Ibiza Cupra</h3>
+                <p>1.8 TSI FWD</p>
+                <p>192HP, 320NM</p>
+              </li>
+              <li class="cars-card">
+                <div class="div-for-img">
+                  <img src="./img/vwgolf.webp" alt="vw-golf-gti7" width="360" />
+                </div>
+                <h3>VW golf GTI VII</h3>
+                <p>2.0 TSI FWD</p>
+                <p>300HP, 400NM</p>
+              </li>
+              <li class="cars-card">
+                <div class="div-for-img">
+                  <img
+                    src="./img/renault-megane-rs-mk-iv.jpg"
+                    alt="renaut"
+                    width="360"
+                  />
+                </div>
+                <h3>Renaut megane 4 RS</h3>
+                <p>1.8 turbo FWD</p>
+                <p>300HP, 380NM</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slide">
+            <ul class="cars-list list">
+              <li class="cars-card">
+                <div class="div-for-img">
+                  <img src="./img/seat-leon-cupra.jpg" alt="seat" width="360" />
+                </div>
+                <h3>Seat Ibiza Cupra</h3>
+                <p>2.0 TSI FWD</p>
+                <p>300HP, 380NM</p>
+              </li>
+              <li class="cars-card">
+                <div class="div-for-img">
+                  <img src="./img/bmwm2cs.jpg" alt="bmw-m2-cs" width="330" />
+                </div>
+                <h3>BMW M2 Clubsport</h3>
+                <p>3.0 TwinTurbo RWD</p>
+                <p>370HP 500NM</p>
+              </li>
+              <li class="cars-card">
+                <div class="div-for-img">
+                  <img src="./img/bmwm3e92.jpg" alt="renaut" width="410" />
+                </div>
+                <h3>Renaut megane 4 RS</h3>
+                <p>3.0 TwinTurbo RWD</p>
+                <p>410HP, 550NM</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="prev">back</button>
+          <button class="next">next</button>
+        </div>
+      </section>
     </main>
 
     <!----------------- FOOTER -------------->
