@@ -28,7 +28,7 @@ body {
 
 .header {
   display: flex;
-  padding: 32px 60px;
+  padding: 18px 60px;
   background-color: #3a393e;
   box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
   position: sticky;
@@ -59,7 +59,7 @@ body {
   color: #e2e9ee;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
 }
 /* стилі при наведенні */
 .nav-link:hover {
@@ -85,7 +85,7 @@ body {
   }
 
   .nav-link {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
@@ -100,17 +100,18 @@ body {
   }
 
   .nav-link {
-    font-size: 34px;
+    font-size: 22px;
   }
 }
 
 .register {
-  padding: 188px 0;
+  padding: 218px 0;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 70px;
 
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -149,6 +150,7 @@ body {
 @media screen and (max-width: 400px) {
   .register {
     background-color: #2e2f42;
+    padding: 188px 0;
   }
 }
 
@@ -236,7 +238,17 @@ p {
     border-radius 250ms ease-in-out 150ms;
 }
 
+.record-div {
+  background-color: #cdcdcd;
+  border-radius: 20px;
+  padding: 20px 0;
+  margin: 0 15px 20px 15px;
+}
+
 @media screen and (max-width: 400px) {
+  .record-div {
+    margin: 0 5px 20px 5px;
+  }
 }
 
 @media only screen and (min-width: 810px) {
@@ -248,17 +260,47 @@ p {
     margin-top: -20px;
     /* align-items: center; */
     margin-left: -1px;
+  }
 
-    .title-records {
-      font-size: 25px;
-    }
+  .title-records {
+    font-size: 25px;
   }
 
   .soc-div {
     margin-left: 40%;
   }
+
   .title-records {
     font-size: 30px;
+  }
+
+  .records-list {
+    padding-left: -40px;
+  }
+
+  .record-div {
+    margin: 0 25px 20px 25px;
+  }
+
+  .car-record {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: 500;
+  }
+}
+
+.records {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1300px) {
+  .soc-div {
+    margin-left: 50%;
+  }
+  .title-records {
+    font-size: 35px;
   }
   .car-record {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -267,26 +309,9 @@ p {
     color: #4a4a4a;
     font-weight: 500;
   }
-}
-
-@media only screen and (min-width: 1300px) {
-  .soc-div {
-    margin-left: 50%;
+  .record-div {
+    margin: 0 90px 30px 90px;
   }
-  .title-records {
-    font-size: 40px;
-  }
-  .car-record {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 35px;
-    color: #4a4a4a;
-    font-weight: 500;
-  }
-}
-
-.records {
-  padding-left: 10%;
 }
 
 /* SWIPER */
